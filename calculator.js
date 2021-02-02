@@ -1,7 +1,7 @@
 // Define the numbers and the operation here
-let firstNumber = 5
-let secondNumber = 7
-let operation = "*"
+let firstNumber = 14
+let secondNumber = 2
+let operation = ""
 
 if ( operation == "+"){
     console.log(firstNumber + secondNumber);
@@ -12,6 +12,16 @@ if ( operation == "+"){
 }else if ( operation == "/"){
     console.log(firstNumber / secondNumber);
 }
+
+
+// Another solution using ternary operator
+let sum = (operation == "+") ?  (firstNumber + secondNumber) : 
+(operation == "-") ? (firstNumber - secondNumber) : 
+(operation == "*") ? (firstNumber * secondNumber) : 
+(operation == "/") ? (firstNumber / secondNumber) : "You assign a wrong operation";
+
+
+console.log(sum);
 
 
 
